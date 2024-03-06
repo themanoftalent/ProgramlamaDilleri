@@ -1,0 +1,19 @@
+7 ERROR
+1.	SYNTAX ERROR: SÖZDİZİMİ HATASIDIR 
+ÖRNEĞİN: print(“SELAM”
+2.	RUNTİME ERROR : ÇALIŞMA ZAMANI HATASIDIR
+ÖRNEĞİN:division_by_zero =5/0
+3.	LOGİC ERROR : MANTIK HATASIDIR
+ÖRNEĞİN: BİR DÖNGÜ İÇİNDE YANLIŞ BİR KOŞUL KULLANMAK
+4.NAME ERROR : İSİM HATASIDIR
+ÖRNEĞİN: TANIMLANMAMIŞ BİR DEĞİŞKENİ KULLANMAK. SAYİ2 TANIMLI DEĞİLSE MESELA KULLANAMAYIZ.
+5.TYPE ERROR: TİP HATASIDIR
+ÖRNEĞİN: BİR VERİ TİPİ UYUMSUZLUĞU, len(5)
+6.INDEX ERROR: İNDEKS HATASIDIR
+ÖRNEĞİN: BİR DİZİDE OLMAYAN BİR İNDEKSİ KULLANMAK, my_list[5] (eğer my_list dizisinin uzunluğu 5 ten küçükse)
+7.ATTRİBUTE ERROR: ÖZELLİK HATASIDIR
+ÖRNEĞİN: BİR NESNENİN MEVCUT OLMAYAN BİR ÖZELLİĞİNE ERİŞMEK,’str.capitalize(5)’.
+
+
+                                                                      2211502039
+                                                                      AYŞEGÜL UÇAR
