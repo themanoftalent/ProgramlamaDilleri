@@ -1,0 +1,68 @@
+//1-Syntax Error
+public class Hello
+{
+    public static void main(string [] args) //String
+    {
+        String hello="Hello world,it is my first program!";
+        system.out.print(hello); //System.out.println
+    }
+}
+
+
+//2-logical error
+
+public class LogicalError{
+    public class void main(String [] args)
+    {
+        int x=10,
+        String y=5;
+        int z=x+y;
+        System.out.println("The sum of x and y:"+z);
+    }
+}
+
+//3-compiler error
+public  class Selamlaşma
+{
+     public static void main(String[] args)
+    {
+        String message1="Merhaba,nasılsın?\n";
+        String message2="İyiyim,teşekkür ederim";
+        System.out.println(message1+message2) //; expected
+        
+                                               //
+    }
+
+
+//4-logical error
+
+public class Bolme{
+    public class void main(String [] args)
+    {
+        int x=10,y=0
+        System.out.println("Sonuc"+x/y); //error
+    }
+}
+
+
+//5-runtime error
+public class Dizi{
+    public class void main(String [] args)
+    {
+        int[] dizi={1,2,3,4,5,6,7,8,9};
+        System.out.println(dizi[9]);
+    }
+}
+
+//6-source error
+public class Main{
+    public class void main(String [] args)
+    {
+        int i=0;
+        while(i<5)
+        {
+            System.out.println("The value of i:"+i);
+        }
+        
+    }
+}
