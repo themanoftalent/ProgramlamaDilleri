@@ -1,0 +1,16 @@
+package programlamaDilleri;
+
+public class Bolme {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		float sayi1=20.5f;
+		int sayi2=5;
+		 float bolme=sayi1/sayi2;
+		System.out.println(bolme);
+		
+		
+
+	}
+
+}
