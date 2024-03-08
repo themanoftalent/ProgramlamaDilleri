@@ -1,0 +1,16 @@
+package programlamaDilleri;
+
+public class SayiToplam {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int sayi1=20;
+		int sayi2=30;
+		int toplam=sayi1+sayi2;
+		System.out.println(toplam);
+		
+
+	}
+
+}
