@@ -41,7 +41,7 @@ public class Main {
     }
 }
 
-*Aritmetic Errors:
+*Aritmetich Errors:
 
 public class Main{
     public static void main(String[] args) {
