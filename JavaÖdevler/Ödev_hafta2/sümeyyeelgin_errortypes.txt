@@ -1,0 +1,29 @@
+syntax error: söz dizimi hatası
+System.out.printn("hello world!!"); //System.out.println olmalı
+
+
+logical error: program çalışıyor ancak yanlış bir sonuç döndürüyor.
+int x = 4;
+int y = 10;
+int z = x / y;
+System.out.println(z); // görüldüğü üzere kod çalışıyor ancak sonucu yanlış döndürüyor
+
+
+
+runtime error: çalışırken derleyicinin hata vermesi
+bellek yada ağ hatası vermesini örnek olarak verebiliriz.
+
+
+
+arithmetic error: matematik ifadeleri yanlış kullanıldığında
+System.out.println(9/0); //program çalıştırıldığında "/ by zero" hatasını veriyor
+
+
+
+resource error: verilerin clean olmaması
+örneğin, veri kaynağının önceden erişilen yerde bulunmaması,yer değiştirmesi veya silinmesi.
+        
+
+
+interface error: arayüzle alakalı sorunlar
+örneğin, class interface'i uyguladığını iddia ediyor ancak tüm metodlarını uygulamıyorsa derleyici hata verir
