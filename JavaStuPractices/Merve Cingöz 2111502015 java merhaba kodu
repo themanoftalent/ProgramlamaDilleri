@@ -1,0 +1,9 @@
+public class selamlasma {
+    public static void main(String[] args) {
+        String spiker1 = "Selam, nasilsiniz ";
+        String spiker2 = "Selam, iyiyim siz nasilsiniz ";
+        System.out.println( spiker1+ spiker2);
+    }
+} 
+Çıktısı: Selam, nasilsiniz
+Selam, iyiyim siz nasilsiniz

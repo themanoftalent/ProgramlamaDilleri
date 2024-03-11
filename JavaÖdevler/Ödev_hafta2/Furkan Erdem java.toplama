@@ -1,0 +1,9 @@
+public class Main{
+
+public static void main(String[] args) {
+  int sayi = 5;
+  int sayi2 = 10;
+  int toplam = sayi + sayi2;
+  System.out.printf("iki sayinin toplami: "+toplam);
+  }
+}

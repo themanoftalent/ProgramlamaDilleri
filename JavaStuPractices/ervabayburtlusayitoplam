@@ -1,0 +1,10 @@
+public  class SayiToplam
+{
+    public static void main(String[] args)
+    {
+        int a=4,b=8;
+        double sum=a+b;
+        System.out.println("İki sayinin toplamı:"+sum);
+    }
+    
+}

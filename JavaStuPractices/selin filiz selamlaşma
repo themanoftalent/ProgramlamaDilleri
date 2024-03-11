@@ -1,0 +1,14 @@
+public class Selamlaşma {
+    public static void main(String[] args) {
+       String mesaj1="Selam!\n";
+       String mesaj2="Selam,Nasilsin?";
+       System.out.println(mesaj1+ mesaj2);
+    }
+}
+
+
+/*
+ÇIKTI:
+  Selam!
+  Selam,Nasılsın?
+  */
