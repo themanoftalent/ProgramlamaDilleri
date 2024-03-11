@@ -1,0 +1,7 @@
+public class konusma {
+    public static void main(String[] args) {
+        String message1 = "Selam Furkan\n";
+        String message2 = "Selam Ali";
+        System.out.printf(message1+message2);
+    }
+}
