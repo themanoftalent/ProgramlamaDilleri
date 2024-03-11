@@ -1,0 +1,79 @@
+                                                 ERROR TİPLERİ VE ÖRNEKLERİ
+
+1-) Syntax Error:Bir programın yazım kurallarına uymadığı ve dilin doğru sözdizimine aykırı olduğu durumları ifade eder. 
+Örnek Java Syntax Hatası: 
+int 3sayi = 10;  // Değişken adı sayı ile başlayamaz.
+
+2-) Logic Error(Mantık Hatası):Bir programın derleme veya çalışma zamanında herhangi bir hata üretmeden  ancak beklenen çıktıyı üretmemesi nedeniyle oluşan bir hatadır. 
+Örnek Java Logic Error Hatası:
+public class LogicErrorExample {
+    public static void main(String[] args) {
+        int x = 5;
+        int y = 0;
+int result=x/y;//Paydada sıfırın olması mantıksal bir hatadır.
+
+        System.out.println("Sonuç: " + result);//Error
+    }
+}
+
+3-) Compilation Error(Derleme Hatası): Bir programın kaynak kodunun derleme sürecinde, dilin sözdizimi veya semantik kurallarına uymadığı durumları ifade eder.
+Örnek Java Compilation Error Hatası:
+public class CompilationErrorExample {
+    public static void main(String[] args) {
+        int a = “gunes”; //  derleme hatası
+        System.out.println(“a”);
+    }
+}
+
+
+4-)Runtime Errors(Çalışma Zamanı Hatası):Bir programın derlendiği zaman derleme hatası almadan çalıştırıldığı, ancak programın çalışma sırasında bir hata nedeniyle durduğu durumları ifade eder.
+Örnek Java Runtime Error Hatası
+public class RuntimeErrorExample {
+    public static void main(String[] args) {
+        int[] numbers = {10, 20, 30, 40, 50};
+
+        // Geçersiz dizi erişimi
+        int result = numbers[10];
+
+        System.out.println("Sonuç: " + result);
+    }
+}
+
+5-)Arithmetic Errors:Matematiksel işlemler sırasında ortaya çıkan hataları ifade eder. Genellikle bu tür hatalar, sayıları sıfıra bölmek (sıfıra bölme hatası), geçersiz matematiksel operasyonlar veya sayılar arasında uyumsuz işlemler yapmak gibi durumlarla ilişkilidir.
+Örnek Java Arithmetic Error Hatası:
+public class ArithmeticErrorExample {
+    public static void main(String[] args) {
+        int x = 20;
+        int y = 0;
+
+        // Sıfıra bölme hatası
+        int result = x / y;
+
+        System.out.println("Sonuç: " + result);
+    }
+}
+
+6-)Resource Errors: Genellikle kaynakların  düzgün bir şekilde yönetilememesi veya yetersiz olması durumunu ifade eder. Bu kaynaklar genellikle bellek, dosya işlemleri, ağ bağlantıları veya diğer sistem kaynakları olabilir. 
+Örnek Java Resource Error:
+try (FileInputStream fis = new FileInputStream("ornek.txt")) {
+    // Dosyayı oku
+} catch (FileNotFoundException e) {
+    // Dosya bulunamadı hatası işlenir
+}
+
+7-)Interface Errors: Java'da interface hatası genellikle iki temel durumda ortaya çıkabilir: Bir sınıfın bir interface'i uygulamaması veya bir interface'de tanımlanan metotların bir sınıf tarafından doğru bir şekilde uygulanmaması.
+Örnek Java Interface Error:
+interface HareketEdebilir {
+    void hareketEt();
+}
+
+// Interface'i uygulamayan sınıf
+class Araba implements HareketEdebilir {
+    // HareketEdebilir interface'indeki metot uygulanmamış
+}
+
+public class InterfaceErrorExample {
+    public static void main(String[] args) {
+        Araba araba = new Araba(); // Hata: Araba, HareketEdebilir interface'ini uygulamıyor
+    }
+}
