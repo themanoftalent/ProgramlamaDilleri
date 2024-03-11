@@ -1,0 +1,16 @@
+package programlamaDilleri;
+
+public class Selamlaşma {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String Selim="Merhaba Sinem";
+		String Sinem="Merhaba Selim ";
+		System.out.println(Selim );
+		System.out.println(Sinem);
+		
+
+	}
+
+}
