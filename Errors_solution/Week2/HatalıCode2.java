@@ -13,8 +13,7 @@ public class HataliKodOrnegi {
             System.out.println("Girdiğiniz sayı tek sayıdır.");
         }
         
-        String[] dizi = new String[5];
-        dizi[5] = "Hatalı Kod Ornegi"; // Dizi indeksi hatası
+     
         
         scanner.close();
     }
