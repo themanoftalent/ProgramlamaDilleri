@@ -18,7 +18,7 @@ for (int i = 0; i < 10; i++) {
         break;
     }
 }
-int j=0;
+int j=scanner.next.Int();
 do {
     System.out.println(j);
     j++;
