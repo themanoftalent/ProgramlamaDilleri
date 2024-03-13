@@ -1,0 +1,66 @@
+Syntax error:
+Geliştirilen programda kullanılan bazı ifadeler kullanılan programlama diline uygun değilse bu hata meydana gelir. Bu hatalar giderilmediği sürece program çalışmaz.
+
+import java.util.Scanner;
+public class sayiToplam {
+    public static void main(String[] args) {
+        Scanner inp = new Scanner(System.in);
+        System.out.println"toplam için iki sayı değeri giriniz."; // tırnakların dışına parantez koyulmamış
+        int sayi1 = inp.nextInt();
+        int sayi2 = inp.nextInt();
+        int toplam = sayi1+sayi2;
+        System.out.println("Girilen sayıların toplamı "+ toplam);
+    }
+}
+
+
+Runtime error: 
+Programın düzgün çalışmasını engelleyen bir yazılım veya donanım hatası olduğunda bu hata meydana gelir. İşletim sisteminin yapamayacağı şeyler istenmesi durumunda veya veri olmayan bir dosyanın üzerine yazılmaya çalışılırsa bu hata meydana gelir. Hata giderilmediği sürece program çalışmaz.
+
+public class Bölme {
+  public static void main(String[] args) {
+      int a=0;
+      int b=0;
+      int bölüm= (a/b);
+      System.out.println(bölüm);// sıfır sıfıra bölünmeyeceğinden sonuç oluşmaz
+     }
+}
+
+
+  Logic error:
+Programın yanlış çalışmasına neden olan mantık hatalarıdır. Geelde matematiksel işlemlerin çok olduğu programlarda meydana gelir ve yazılımcı tarafından yapılan hatalardır. Tespit edilmesi zor ve uğraştırıcıdır.
+
+using System;
+public class Logicerror
+{
+  public static void Main(string[] args)
+      {
+      Console.WriteLine(Ortalama(16,12));
+      Console.ReadLine();
+}
+public static int Ortalama(int a,int b)
+{
+return a + b / 2;//olması gereken : (a + b ) / 2;
+        }
+}
+
+Compliation error:
+Derleyici programı derlerken meydana gelen hatalardır. Program derlenene kadar hata ortaya çıkmaz IDE ile geliştirilen programda derleme hatası olup olmadığı gözükebilir.
+
+public class Derleme
+{
+
+public static void Main()
+{
+Console.WriteLine("Derleme hatası"//eksik ifade mevcut. Olması gereken ("Derleme hatası");
+} 
+}
+  
+Kaynak hataları:
+Bilgisayarın programı çalıştırmak için yetersiz bir sisteme sahip  olmasından kaynaklı tıkanmaya veya sistemin çökmesine sebep olan hatalardır.
+
+Arayüz hataları:
+Programın kullanım amacıyla kullanıcıya sunulan kullanış arayüzünün farklı olmasından kaynaklı hataladır.
+
+Aritmetik hatalar:
+Bir tür mantık hatasıdır ancak direkt matematiksel işlemleri içerir.

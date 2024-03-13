@@ -1,0 +1,5 @@
+Fonksiyoneş Hatalar:Yazılımın çalışmadığında gelen geniş kapsamlı hata.
+Söz Dizimi(Syntax Hataları):Yazım hatalarıdır.
+Çalışma Zamanı Hataları(Run Time):Yazılan kodu derleyip çalıştırdıktan sonra ortaya çıkan hatalardır.
+Mantık Hataları: Bir yazılımın çalışma akışındaki hatayı temsil eder.Program derlenir ama düzgün çalışmaz.
+Arayüz Hataları:Programın kullanım amacıyla gerçekte kullanımı arasında bir bağlantı olmadığı zaman ortaya çıkar.

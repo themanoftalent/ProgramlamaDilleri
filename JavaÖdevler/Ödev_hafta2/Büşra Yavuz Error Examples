@@ -1,0 +1,53 @@
+*Syntax Error:
+
+public class Bolme {
+
+        public static void main(String[]args) {
+         float sayi1=7.4f, bolum;
+         int sayi2=2;
+         bolum=sayi1/sayi2
+         System.out.println(bolum);
+   }
+}
+
+
+*Logical Error:
+
+public class SayiToplam{
+    
+	public static void main(String[] args) {
+	    int a=2, b=3;
+      int toplam=a+b;
+		System.out.println("Carpim:" +toplam);
+	}
+}
+
+
+*Compiler Error:
+
+public class Main {
+    public static void main(String[] args) {
+        int x = 5;
+        System.out.println(sayi1);
+    }
+}
+
+
+*Runtime Error:
+public class Main {
+    public static void main(String[] args) {
+        int[] dizi1 = {4,7,9};
+        System.out.println(dizi1[3]); 
+    }
+}
+
+*Arithmetic Errors:
+
+public class Main{
+    public static void main(String[] args) {
+        int a=1, b=0;
+        int sonuc = a/b;
+        System.out.println(sonuc);
+    }
+}
+
