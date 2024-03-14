@@ -1,0 +1,146 @@
+1)
+import java.util.Scanner;
+public class examples {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner=new Scanner(System.in);
+		
+		System.out.println("Otobüs kartında kalan parayla kaç sefer otobüse binileceğini gösteren program");
+		System.out.println("Bakiyenizi giriniz:");
+		double bakiye=scanner.nextDouble();
+		
+		int otobusUcreti=7;
+		
+		do {
+		
+			int binisHakki=(int)bakiye/otobusUcreti;
+			System.out.println(binisHakki+
+                                     "  kere binis hakkınız kaldı");
+			bakiye-=otobusUcreti;
+		}
+		
+		     while(bakiye>0);
+	}
+
+}
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+2)
+
+/*Yatırılmak istenen tutar kadar para bankamatiğe girilinceye kadar çalışan program */
+import java.util.Scanner;
+
+public class examples {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner=new Scanner(System.in);
+		
+		System.out.println("Yatırmak istediğiniz tutarı giriniz");
+		int yatırılmakIstenenTutar=scanner.nextInt();
+
+		int i=0;
+		int paraGirisi;
+		while(i<=yatırılmakIstenenTutar)
+		{
+			System.out.println("Bankamatiğe ne kadar para girisi yapıldı ?");
+			paraGirisi=scanner.nextInt();
+		    i=paraGirisi+i;
+		    
+		    if(i-yatırılmakIstenenTutar==0)
+		    {
+		    	break;
+		    }
+		    
+		}
+		
+	}
+
+}
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+3)
+/*Pozitif sayi girilene kadar devam eden program*/
+import java.util.Scanner;
+
+public class examples {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner=new Scanner(System.in);
+		
+		int sayi;
+		do {
+			
+			System.out.println("Bir sayi giriniz:");
+			sayi=scanner.nextInt();
+			
+			
+		}
+		while(sayi<=0);
+		
+		
+	}
+
+}
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+4)
+/*Doğru isim girilene kadar devam eden program*/
+import java.util.Scanner;
+
+public class examples {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner=new Scanner(System.in);
+		
+		String isim;
+		String sifre;
+		do {
+			
+			System.out.println("İsminizi giriniz:");
+			isim=scanner.nextLine();
+			System.out.println("Şifrenizi giriniz:");
+			sifre=scanner.nextLine();
+		}
+		while(!isim.equalsIgnoreCase("Erva")&& !sifre.equals(12333));
+		
+		
+	}
+
+}
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+5)
+/*100.musteriye hediye veren program */
+import java.util.Scanner;
+
+public class examples {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner=new Scanner(System.in);
+		
+		int i = 1;
+		while(i<=100)
+		{
+			System.out.println("Hoşgeldiniz:"+i+" .müsterimizsiniz...");
+			System.out.println("İyi günler dileriz :)");
+			i++;
+			
+			if(i==100)
+			{
+				System.out.println(i+". müşterimizsiniz hediye kazandınız");
+			}
+			
+		}
+		
+		
+	}
+
+}
+
+
