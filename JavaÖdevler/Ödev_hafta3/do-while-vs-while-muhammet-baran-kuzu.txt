@@ -1,0 +1,131 @@
+do-while ile while arasındaki temel fark; do-while'ın döngü şartını, ifade bloğunu en az bir kere işledikten sonra kontrol etmesidir. while'da ise önce şart kontrol edilir.
+
+
+
+
+ÖRNEK 1: Kullanıcıdan alınan değerden 10'a kadar olan sayılar yazdırılır. Kullanıcının girdiği sayı doğru aralıkta olmazsa döngünün çalışmaması için while ile döngü şartı önceden kontrol edilir.
+
+import java.util.Scanner;
+
+public class Count_to_ten {
+	public static void main(String[] args) {
+		Scanner read = new Scanner(System.in);
+		
+		System.out.print("1 ile 10 arasında bir sayı girin: ");
+		int number = read.nextInt();
+		
+		while(number>=1 && number<=10) {
+			System.out.println(number++);
+		}
+	}
+}
+
+
+
+
+ÖRNEK 2: Kullanıcıdan alınan sayılar toplanır, çıkış için kullanıcı 0 girmelidir. do-while ile döngüye en az bir kez girileceğinden programın başında fazladan bir kontrol mekanizması kullanılabilir.
+
+import java.util.Scanner;
+
+public class Sum_of_integers {
+	public static void main(String[] args) {
+		Scanner read = new Scanner(System.in);
+		
+		int sum = 0;
+		
+		System.out.print("Bir sayı girin (Çıkış için 0 girin): ");
+		int number = read.nextInt();
+		
+		if(number==0) System.exit(0);
+			
+		do {
+			sum+=number;
+			System.out.print("Bir sayı girin (Çıkış için 0 girin): ");
+			number = read.nextInt();
+		} while(number!=0);
+		
+		System.out.println("Girdiğiniz sayılar toplamı: " + sum);
+	}
+}
+
+
+
+
+ÖRNEK 3: Kullanıcının girdiği sayıyı basamaklarına ayırma. 0 sayısının da birler basamağı olduğundan kontrolden geçmeden en az bir kez döngüye girilmesi için do-while kullanımı daha uygundur.
+
+import java.util.Scanner;
+
+public class Digits_of_integers {
+	public static void main(String[] args) {
+		Scanner read = new Scanner(System.in);
+		
+		System.out.print("Basamaklarına ayırılacak sayıyı girin: ");
+		int number = read.nextInt();
+		int i = 1;
+		
+		do {
+			System.out.println(i + "'ler basamağındaki sayı " + number%10);
+			number /= 10;
+			i *= 10;
+		} while(number!=0);
+	}
+}
+
+
+
+
+ÖRNEK 4: Girilen sayının asallığını kontrol eder. Sayı yalnızca 0'dan büyük ise döngüye girmesi için while kullanılabilir.
+
+import java.util.Scanner;
+
+public class Prime_or_not {
+	public static void main(String[] args) {
+		Scanner read = new Scanner(System.in);
+		
+		System.out.print("Sayınızı girin: ");
+		int number = read.nextInt();
+		int i = 1, counter = 0;
+		
+		while(i<=number) {
+			if(number%i==0) counter++;
+			i++;
+		}
+		
+		if(counter==2) System.out.println("Sayınız asal bir sayı");
+		
+		else System.out.println("Sayınız asal değil");
+	}
+}
+
+
+
+
+ÖRNEK 5: Bu örnek basit aritmetik işlemler yapan bir hesap makinesi olarak işler. İşlem listesinin en az bir kez görüntülenmesi için do-while kullanılabilir.
+
+import java.util.Scanner;
+
+public class Calculate {
+	public static void main(String[] args) {
+		Scanner read = new Scanner(System.in);
+		
+		do {
+			System.out.print("Yapılacak aritmetik işlemi seçin (1=toplama, 2=çıkarma, 3=çarpma, 4=bölme): ");
+			int operation = read.nextInt();
+			
+			if(operation<1 || operation>4) break;
+			
+			System.out.print("İlk sayınızı girin: ");
+			float number1 = read.nextFloat();
+			System.out.print("İkinci sayınızı girin: ");
+			float number2 = read.nextFloat();
+			
+			if(operation==1) System.out.println("İşlem sonucu: " + (number1+number2));
+			
+			else if(operation==2) System.out.println("İşlem sonucu: " + (number1-number2));
+			
+			else if(operation==3) System.out.println("İşlem sonucu: " + (number1*number2));
+			
+			else if(operation==4) System.out.println("İşlem sonucu: " + (number1/number2));
+		} while(true);
+	}
+}
