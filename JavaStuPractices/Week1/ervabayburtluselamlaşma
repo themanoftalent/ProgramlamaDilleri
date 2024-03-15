@@ -1,0 +1,10 @@
+public  class Selamlaşma
+{
+     public static void main(String[] args)
+    {
+        String message1="Merhaba,nasılsın?\n";
+        String message2="İyiyim,teşekkür ederim";
+        System.out.println(message1+message2);
+        
+    }
+    }
