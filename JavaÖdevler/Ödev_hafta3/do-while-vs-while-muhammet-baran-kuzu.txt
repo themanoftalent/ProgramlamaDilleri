@@ -100,7 +100,7 @@ public class Prime_or_not {
 
 
 
-ÖRNEK 5: Bu örnek basit aritmetik işlemler yapan bir hesap makinesi olarak işler. İşlem listesinin en az bir kez görüntülenmesi için do-while kullanılabilir.
+ÖRNEK 5: Bu örnek basit aritmetik işlemler yapan bir hesap makinesi olarak işler.
 
 import java.util.Scanner;
 
