@@ -1,0 +1,60 @@
+public class kod1 {
+    public static void main(String[] args) {
+        int i = 1;
+        do {
+            System.out.println(i);
+            i++;
+        } while (i <= 10);
+    }
+}
+--------------------------------------------------------------
+public class kod2 {
+    public static void main(String[] args) {
+        int i = 2;
+        do {
+            System.out.println(i);
+            i += 2;
+        } while (i <= 100);
+    }
+}
+----------------------------------------------------------------
+public class kod3 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int num;
+        do {
+            System.out.print("Lütfen bir pozitif sayı girin: ");
+            num = scanner.nextInt();
+        } while (num <= 0);
+        System.out.println("Girdiğiniz sayı pozitif.");
+    }
+}
+------------------------------------------------------------------
+public class kod4 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Faktöriyelini hesaplamak istediğiniz sayıyı girin: ");
+        int num = scanner.nextInt();
+        int factorial = 1;
+        int i = 1;
+        do {
+            factorial *= i;
+            i++;
+        } while (i <= num);
+        System.out.println(num + " sayısının faktöriyeli: " + factorial);
+    }
+}
+-------------------------------------------------------------------
+public class kod5 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Başlangıç sayısını girin: ");
+        int basla = scanner.nextInt();
+        System.out.print("Bitiş sayısını girin: ");
+        int end = scanner.nextInt();
+        do {
+            System.out.println(basla);
+            basla++;
+        } while (basla <= end);
+    }
+}
