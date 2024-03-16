@@ -1,0 +1,17 @@
+
+//Ayşegül Uçar 2211502039
+package programlamadıllerı1;
+
+public class bolme {
+	
+	    public static void main(String[] args) {
+	        int num1 = 17;
+	        double num2 = 1.5;
+
+	        double result = num1 / num2;
+	        
+	        System.out.println(result);
+	        
+	   
+	}
+}
