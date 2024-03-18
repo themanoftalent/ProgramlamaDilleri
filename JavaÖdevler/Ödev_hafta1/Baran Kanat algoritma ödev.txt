@@ -1,0 +1,15 @@
+Okula Hazırlanma Algoritması
+1-Uyan
+2-Yataktan doğrul
+3-Kalk
+4-Dolabını aç
+5-Dolabından kıyafetlerini seç
+6-Kıyafetleri çıkar
+7-Üstündekileri çıkar
+8-Dolaptan çıkardığın kıyafetleri giy
+9-Çantana doğru yönel
+10-Çantanı al
+11-Kendi odanın kapısından çık
+12-Ev girişinin olduğu kapıya yönel
+13-Ayakkabılarını giy
+14-Okula yürü

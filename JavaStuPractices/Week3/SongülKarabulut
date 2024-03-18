@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+class yassor {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Yasinizi ve adinizin ilk harfini giriniz. Cinsiyetinizi male/1 ya da female/2 olarak belirtiniz.");
+        int yas = input.nextInt();
+        String isim = input.next();
+        int cinsiyet = input.nextInt();
+
+        if (yas < 18 && yas > 16 && cinsiyet == 1 && isim.equals("B")) {
+            System.out.println("Evde otur.");
+        } else {
+            System.out.println("Disari cik.");
+        }
+    }
+}
