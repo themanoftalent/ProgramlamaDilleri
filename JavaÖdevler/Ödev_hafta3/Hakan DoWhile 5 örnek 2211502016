@@ -1,0 +1,112 @@
+import java.util.Scanner;
+
+public class BirdenOnaKadarCiftToplam {
+
+	public static void main(String[] args) {
+		int i=1;
+		int toplam=0;
+		
+		do {
+			
+			if(i%2==0) {
+				toplam=i+toplam;
+			}
+			i++;
+			
+		}while(i<15);
+		
+		System.out.println(toplam);
+	}
+}
+
+---------------------------------------------------------------------------------
+
+  import java.util.Scanner;
+
+public class BirdenGirilenDegereToplam {
+
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+
+		System.out.print("Dongunun hangi sayida sonlancagını giriniz: ");
+		int a=scan.nextInt();
+		
+		int i=1, toplam=0;
+		
+		do {
+			
+			toplam=i+toplam;
+			i++;
+			
+		}while(i<=a);
+		
+		System.out.println(toplam);
+	
+	}
+}
+
+----------------------------------------------------------------------------------
+
+  public class OnlaYirmiArasindakiSayilar {
+
+	public static void main(String[] args) {
+		int i=10;
+		
+		do {
+			System.out.println(i);
+			i++;
+			}while(i<=20);
+		
+	}
+
+}
+
+  ---------------------------------------------------------------------------------
+
+  import java.util.Scanner;
+
+public class faktoriyel {
+
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+		System.out.print("Faktoriyelini hesaplamak istediginiz sayi: ");
+		int a=scan.nextInt();
+		
+		int fak=1, i=1;
+		
+		do {
+			fak*=i;
+			i++;
+		}while(i<=a);
+		
+		System.out.println("Faktoriyel:"+fak);	
+	}
+
+}
+
+
+--------------------------------------------------------------------------------------
+
+  import java.util.Scanner;
+
+public class SayininAraliginiBulma {
+
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+		int a;
+		
+		do {
+			System.out.print("Lutfen bir deger giriniz: ");
+			a=scan.nextInt();
+			if(a<20 || a>30 ) {
+				System.out.println("Girdiginiz sayi 20 ile 30 arasinda degildir.");
+			}
+			
+		}while(a<20 || a>30);
+			
+		System.out.println("Girdiginiz sayi 20 ile 30 arasındadır.");
+		
+	}
+
+}
+
