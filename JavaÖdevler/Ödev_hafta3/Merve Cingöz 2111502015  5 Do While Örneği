@@ -1,0 +1,100 @@
+Merve Cingöz 2111502015
+
+//Kullanıcıdan alınan bir sayının pozitif olup olmadığını kontrol eden döngü:
+import java.util.Scanner;
+
+public class PozitifMiNegatifMi {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int sayi;
+
+        do {
+            System.out.print("Lütfen pozitif bir sayi girin: ");
+            sayi = scanner.nextInt();
+        } while (sayi <= 0);
+
+        System.out.println("Girdiğiniz sayı pozitif: " + sayi);
+    }
+}
+
+
+//1'den 10'a kadar olan sayıların toplamını hesaplayan döngü:
+
+public class SayilarinToplami {
+    public static void main(String[] args) {
+        int sayi = 1;
+        int toplam = 0;
+
+        do {
+            toplam += sayi;
+            sayi++;
+        } while (sayi <= 10);
+
+        System.out.println("1'den 10'a kadar olan sayilarin toplami: " + toplam);
+    }
+}
+
+
+//Kullanıcı belirli bir sayı girene kadar girdileri toplayan döngü:
+import java.util.Scanner;
+
+public class Toplama {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int toplam = 0;
+        int sayi;
+
+        do {
+            System.out.print("Bir sayi girin (çikmak için 0'a basin): ");
+            sayi = scanner.nextInt();
+            toplam += sayi;
+        } while (sayi != 0);
+
+        System.out.println("Girdiğiniz sayilarin toplami: " + toplam);
+    }
+}
+
+
+//Kullanıcıdan alınan sayının faktöriyelini hesaplayan döngü:
+import java.util.Scanner;
+
+public class FaktöriyelHesaplama {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int sayi;
+        int faktoriyel = 1;
+
+        System.out.print("Faktöriyeli hesaplanacak sayiyi girin: ");
+        sayi = scanner.nextInt();
+
+        int i = 1;
+        do {
+            faktoriyel *= i;
+            i++;
+        } while (i <= sayi);
+
+        System.out.println(sayi + " sayisinin faktöriyeli: " + faktoriyel);
+    }
+}
+
+
+//Belirli bir sayı aralığındaki çift sayıları yazdıran döngü:
+
+public class CiftSayilar {
+    public static void main(String[] args) {
+        int sayi = 1;
+
+        System.out.println("1'den 20'ye kadar olan çift sayilar:");
+
+        do {
+            if (sayi % 2 == 0) {
+                System.out.println(sayi);
+            }
+            sayi++;
+        } while (sayi <= 20);
+    }
+}
+
+
+
+
