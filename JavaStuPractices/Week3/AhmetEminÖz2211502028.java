@@ -3,29 +3,28 @@ public class evdeotur {
     public static void main(String[] args) {
         Scanner scanner=new Scanner(System.in);
         int yas;
-        String isim;
+        String ad;
         String cinsiyet;
 
-        System.out.println("İsminizin ilk harfini giriniz : ");
-        isim=scanner.nextLine();
+        System.out.println("Adınızın ilk harfini giriniz: ");
+        ad=scanner.nextLine();
 
         System.out.println("Cinsiyetinizi belirtiniz: ");
         cinsiyet=scanner.nextLine();
 
-        System.out.println("Yasinizi giriniz: ");
+        System.out.println("Yaşınızı giriniz: ");
         yas=scanner.nextInt();
 
         if(yas<18){
-            if (yas>16 && cinsiyet.equals("erkek") && isim.equals('B')){
-                System.out.println("evde kal");
-
+            if (yas > 16 && cinsiyet.equals("erkek") && (ad.equals("b") || ad.equals("B"))){
+                System.out.println("Evde kal");
             }
             else{
-                System.out.println("disarida gez");
+                System.out.println("Dışarı çık");
             }
         }
         else{
-            System.out.println("disarida gez");
+            System.out.println("Dışarı cık");
         }
     }
 }
