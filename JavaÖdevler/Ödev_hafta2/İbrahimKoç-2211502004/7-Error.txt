@@ -1,0 +1,76 @@
+7 ERROR TYPE ---- İbrahim Koç 2211502004
+
+1- Syntax hatası --> Söz dizim hatasıdır
+
+örn:
+
+public class a {
+    public static void main(String[] args) {
+        System.out.prntln(34); // ->> println şeklinde olması gerekir. Yanlış yazıldığı için "syntax hatası"
+    }
+}
+
+2- Runtime hatası --> Çalışma zamanı hatası
+
+
+public class DiziDeneme {
+    public static void main(String[] args) {
+        int[] array = new int[5];
+        System.out.println(array[6]); // ->> bilinmeyen(erişilemeyen) geçersiz dizinden kaynaklı "runtime hatası"
+    }
+}
+
+3- Logic hatası --> Mantıksal hata
+
+public class MantıkDeneme{
+     public static void main(String[] args){
+	 int x = 2;
+	 int y = 0;
+	 System.out.println(x/y); // ->> sıfıra bölmeden kaynaklı "Mantık hatası"
+     }
+}
+
+
+4- Name hatası --> İsim hatası
+
+public class DenemeName {
+    public static void main(String[] args) {
+        int num2 = 5;
+        System.out.println(num1); // ->> yanlış isim kullanımından kaynaklı hata
+    }
+}
+
+5- Type hatası --> Tip hatası
+
+public class DenemeType {
+    public static void main(String[] args) {
+        int num = "5"; 
+        System.out.println(num); // ->> string ifadeyi int türünde değişkene atamaya çalışırken oluşan "Type hatası"
+    }
+}
+
+
+6- Index hatası --> İndeks hatası
+
+public class DenemeIndex {
+    public static void main(String[] args) {
+        int[] numbers = {1, 2, 3};
+        System.out.println(numbers[4]); // ->> erişimi olunmayan geçersiz indexten kaynaklı hata
+    }
+}
+
+7- Attribute hatası --> Özellik hatası
+
+// --javascript--
+class Insan {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+}
+
+const insan = new Insan("İbrahim", 21);
+console.log(insan.eyesColor); // tanımlanmamış var olmayan özellikten dolayı çıkan "Attribute hatası"
+
+
+                                                                     

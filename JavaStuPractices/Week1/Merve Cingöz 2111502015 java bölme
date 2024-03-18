@@ -1,0 +1,13 @@
+public class bolme {
+    public static void main(String[] args) {
+        int sayi1 = 12;
+        double sayi2 = 5.2;
+
+        double bolme = sayi1 / sayi2;
+
+        System.out.println("iki sayinin bolumu:"+bolme);
+    }
+}
+
+
+Çıktısı: iki sayinin bolumu: 2.3

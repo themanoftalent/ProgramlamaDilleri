@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class EvdenCik{
+    public static void main(String[] args) {
+      Scanner scanner= new Scanner(System.in);
+      System.out.println("Yasinizi giriniz:");
+      int yas=scanner.nextInt();
+      System.out.println("Cinsiyetinizi secin(E/K):");
+      String token = scanner.next();
+      char cinsiyet=token.charAt(0);
+      System.out.println("Adinizin ilk harfini giriniz:");
+      String ad= scanner.next();
+     
+      if(yas<18 && yas>16 && cinsiyet =='E' && ad =="B" ){
+         System.out.println("Evde kal");  
+      }else{
+          System.out.println("Evden cik");
+       
+      }
+    }
+}
