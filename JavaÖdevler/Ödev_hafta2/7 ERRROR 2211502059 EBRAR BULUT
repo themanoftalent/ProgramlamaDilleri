@@ -1,0 +1,57 @@
+2211502059 EBRAR BULUT
+7 ERROR
+1)SYNTAX ERROR: Kullanılan programlama dilinin kurallarına aykırı bazı ifadelerin yer almasından dolayı ortaya çıkan yazılış bakımından olan  hata türüdür.
+Java da örnek:
+public class Main {
+  public static void main(String[] args) {
+System.out,println("hello");
+// nokta yerine virgül kullanılması
+}
+}
+
+
+2)RUNTİME ERROR: Çalışma zamanı hataları programın çalışmasına engel olan yazılım veya donanım  hatalarıdır.
+Java da örnek:
+public class Main {
+  public static void main(String[] args) {
+int a=5;
+int b = 0;
+int bolum= a/b ;
+System.outprintln(bolum); // bir sayı 0 a bölünemez.
+}
+}
+
+
+3) LOGİC ERROR : Yani mantık hataları programın yanluş çalışmasına neden olan beklenmedik bir çıktı ve sonuc veren hatalardır.
+Java da örnek:
+public class Main {
+  public static void main(String[] args) {
+int a=6;
+int b = 9;
+int c=3;
+int sonuc= a + b / c ;
+System.out.println(sonuc); //olması gereken (a+b)/c idi yani beklenmeyen sonuc verecek
+}
+}
+4)COMPİLATİON ERROR:Derleme veya derleme zamanı hatası, derleyici kodunuzu alt seviye dile nasıl dönüştüreceğini bilmediğinde meydana gelir.
+Java da örnek:
+public class Main {
+  public static void main(String[] args) {
+System.out.println("hello";//derleyici kodu nasıl okuyacağını bilmez
+
+}
+}
+
+5) ARAYÜZ HATALARI:Örneğin, belli bir parametrenin ayarlanmasını gerektiren bir API’niz varsa ve bu parametreler ayarlanmadıysa bir arayüz hatası meydana gelebilir. 
+6)FONKSİYONEL HATALAR:Yazılım istendiği gibi çalışmadığı durumda meydana gelen geniş kapsamlı bir hata türüdür. Örneğin, bir kullanıcı bir metin editöründe çalışma yapıp bir şeyler yazdıktan sonra “Kaydet” butonuna tıklarsa ve çalışması kaydedilmezse, bu fonksiyonel bir hata olur. 
+7)SEMANTİC ERROR:Çoğu tanımlama ve kapsam hatasından meydana gelir. Yanlış operatör veya değişken kullanılması sonucu ortaya çıkabilir.
+Java da örnek:
+public class Main {
+  public static void main(String[] args) {
+i=5;
+int c=i+k;
+System.out.println(c);// k yı tanımlamadık;
+}
+}
+
+
