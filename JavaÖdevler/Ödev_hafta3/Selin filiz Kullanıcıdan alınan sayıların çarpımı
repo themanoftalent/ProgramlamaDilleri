@@ -1,0 +1,16 @@
+package kullanicidanGirilenSayilarinCarpimi;
+import java.util.Scanner;
+public class KullanicidanGirilenSayilarinCarpimi {
+
+	public static void main(String[] args) {
+		System.out.println("Lutfen bir a sayisi giriniz:");
+		Scanner scanner=new Scanner(System.in);
+		int a=scanner.nextInt();
+		System.out.println("Lutfen bir b sayisi giriniz:");
+		int b=scanner.nextInt();
+		int carpim=a*b;
+		System.out.println("Sonucunuz:"+carpim);
+		
+	}
+
+}
