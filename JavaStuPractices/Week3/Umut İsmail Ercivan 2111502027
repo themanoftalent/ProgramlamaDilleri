@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class MatchingName {
+    public static void main(String[] args) {
+        String isim = "Umut";
+        Scanner sc = new Scanner(System.in);
+        String name = sc.nextLine();
+        if (name.equals(isim)) {
+            System.out.println("Welcome");
+        } else {
+            System.out.println("Wrong name");
+        }
+        sc.close();
+    }
+}
