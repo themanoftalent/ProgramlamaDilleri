@@ -7,7 +7,7 @@ public class evdeotur {
         String cinsiyet;
 
         System.out.println("Adınızın ilk harfini giriniz: ");
-        ad=scanner.nextLine();
+        ad=scanner.nextLine().toUpperCase().charAt(0) + "";
 
         System.out.println("Cinsiyetinizi belirtiniz: ");
         cinsiyet=scanner.nextLine();
