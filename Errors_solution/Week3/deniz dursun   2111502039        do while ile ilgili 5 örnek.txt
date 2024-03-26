@@ -1,0 +1,89 @@
+import java.util.Scanner;
+
+public class FactorialCalculator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Bir sayı girin: ");
+        int number = scanner.nextInt();
+        
+        int factorial = 1;
+        int i = 1;
+        
+        do {
+            factorial *= i;
+            i++;
+        } while (i <= number);
+        
+        System.out.println(number + " sayısının faktöriyeli: " + factorial);
+    }
+}
+   ******************************************************************************************
+*********************************************************************************************
+
+public class SumCalculator {
+    public static void main(String[] args) {
+        int start = 1;
+        int end = 10;
+        int sum = 0;
+        
+        do {
+            sum += start;
+            start++;
+        } while (start <= end);
+        
+        System.out.println("Toplam: " + sum);
+    }
+}
+************************************************************************************************
+**************************************************************************************************
+public class OddNumbersPrinter {
+    public static void main(String[] args) {
+        int start = 1;
+        int end = 10;
+        
+        do {
+            if (start % 2 != 0) {
+                System.out.println(start);
+            }
+            start++;
+        } while (start <= end);
+    }
+}
+************************************************************************************************
+************************************************************************************************
+public class ArraySumCalculator {
+    public static void main(String[] args) {
+        int[] numbers = {1, 2, 3, 4, 5};
+        int sum = 0;
+        int i = 0;
+        
+        do {
+            sum += numbers[i];
+            i++;
+        } while (i < numbers.length);
+        
+        System.out.println("Dizi elemanlarının toplamı: " + sum);
+    }
+}
+****************************************************************************************************
+****************************************************************************************************
+import java.util.Scanner;
+
+public class ReverseNumber {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Bir sayı girin: ");
+        int number = scanner.nextInt();
+        int reversedNumber = 0;
+        
+        do {
+            int digit = number % 10;
+            reversedNumber = reversedNumber * 10 + digit;
+            number /= 10;
+        } while (number != 0);
+        
+        System.out.println("Sayının tersi: " + reversedNumber);
+    }
+}
+*****************************************************************************************************
+****************************************************************************************************

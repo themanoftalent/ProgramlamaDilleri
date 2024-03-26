@@ -1,0 +1,98 @@
+1)Faktöryel hesaplayan program
+package Faktoryel;
+import java.util.Scanner;
+public class faktoryel {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+        int sayi, faktoriyel = 1;
+        
+        System.out.print("Pozitif bir sayı giriniz: ");
+        sayi = scanner.nextInt();
+        
+        do {
+            faktoriyel *= sayi;
+            sayi--;
+        } while (sayi >0);
+        
+        System.out.println("Girilen sayının faktöriyeli: " + faktoriyel);
+        scanner.close();
+	}
+
+}
+2)1'den 100'e kadarki sayılardan tekleri bulan program
+
+package oddNumber1to100;
+public class OddNumber1to100 {
+
+	public static void main(String[] args) {
+		int a=1;
+		do {
+			if(a%2!=0) {
+				System.out.print("a="+a +"  ");
+				}
+			a++;
+		}while(a<=100);
+
+	}
+
+}
+3)1'den 100'e kadarki sayıları yazdıran program
+package DoWhile1to100;
+
+public class DoWhile1to100 {
+
+	public static void main(String[] args) {
+    int i=1;
+    do{
+    	System.out.print("i="+i + " ");
+    	i++;
+    }
+    while(i<=100);
+	}
+}
+4)Kullanıcının girdiği sayıya kadarki sayıları toplayan program
+ackage sum;
+import java.util.Scanner;
+public class sum {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+        System.out.print("Bir sayı girin: ");
+        int sayi = scanner.nextInt();
+        int toplam = 0;
+        
+        int i = 1;
+        do {
+            toplam += i;
+            i++;
+        } while (i <= sayi);
+        
+        System.out.println("1'den " + sayi + " kadar olan sayıların toplamı: " + toplam);
+        scanner.close();
+	}
+
+}
+
+5)"Evet" veya "Hayır" çıktıları veren program
+package YesOrNo;
+import java.util.Scanner;
+public class yesOrNo {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+        String cevap;
+        
+        do {
+            System.out.println("Çalışmaya devam etmek istiyor musunuz? (Evet/Hayır)");
+            cevap = scanner.next();
+        } while (!cevap.equalsIgnoreCase("Evet"));
+        
+        System.out.println("Program sonlandırıldı.");
+        scanner.close();
+	}
+
+}
+
+
+
