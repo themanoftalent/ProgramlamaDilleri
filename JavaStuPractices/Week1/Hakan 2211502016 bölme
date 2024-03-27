@@ -1,0 +1,11 @@
+public class bolme{
+
+  public static void(String[] args){
+
+int num1=6;
+double num2=2.5;
+double bolum=num1/num2;
+
+System.out.println("Iki sayinin bolumu: " +bolum);
+}
+}

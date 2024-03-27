@@ -1,0 +1,75 @@
+ 1- public class Main {
+    public static void main(String[] args) {
+        
+        //1'den 100'e kadar olan sayıları yazdırma
+        
+        int i = 1;
+        do {
+            System.out.println(i);
+            i++;
+        } while (i <= 100);
+        }
+    }
+
+2- public class Main {
+    public static void main(String[] args) {
+      
+        //1'den başlayarak 100'e kadar olan sayıların toplamını yazdırma
+        
+        int i = 1;
+        int sum = 0;
+        do {
+            sum = sum + i;
+            i++;
+        }
+        while (i <= 100);
+        System.out.println("Toplam: " + sum);
+    }
+} 
+
+3-   public class Main {
+    public static void main(String[] args) {
+     
+    //  30'dan başlayarak 3'er azaltma
+       
+        int i = 30;
+        do {
+            System.out.println(i);
+            i = i-3;
+        } while (i >= 0);
+    }
+}
+
+ 4- public class Main {
+    public static void main(String[] args) {
+
+        // İsim doğrulatma
+
+        Scanner scanner = new Scanner(System.in);
+        String isim;
+
+        do{
+            System.out.println("isminizi giriniz :");
+            isim= scanner.next();
+        }
+        while(!isim.equals("furkan"));
+
+        System.out.println("isim doğru");
+    }
+}
+
+5- public class Main {
+    public static void main(String[] args) {
+       
+        // 1'den 10'a kadar olan tek sayıların karesini yazdırma
+        
+        int i = 1;
+        do {
+            if (i % 2 != 0) {
+                System.out.println(i + " sayısının karesi: " + (i * i));
+            }
+            i++;
+        } while (i <= 10);
+    }
+}
+
