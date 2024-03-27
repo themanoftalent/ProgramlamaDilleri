@@ -1,0 +1,21 @@
+package nameMatch;
+import java.util.Scanner;
+public class NameSurnameQuestions {
+
+	public static void main(String[] args) {
+		java.util.Scanner scanner=new Scanner(System.in);//Creat a Scanner object
+		System.out.println("Enter your name please:");
+		String name=scanner.nextLine();
+		System.out.println("Enter your surname please:");
+		String surname=scanner.nextLine();
+		System.out.println("Your name and surname:"+ name  +surname);
+		if(name.equals("Selin") && surname.equals("Filiz"))
+		{
+			System.out.println("Trying is succesful");
+		}else 
+		{
+			System.out.println("You must try again");
+		}
+	}
+
+}
