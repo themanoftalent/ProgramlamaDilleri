@@ -1,0 +1,68 @@
+1-Syntax Error:
+Kod yazımında dile uygun olmayan durum.
+Örnek
+int sayi = 50 (; eksikliği gibi)
+
+
+2-Runtime Error:
+Kodun gereğinden fazla uzun sürede çalışması.
+Örnek (sonsuz döngü)
+public class SonsuzDongu {
+    public static void main(String[] args) {
+	int i = 1;
+        while (i>0) {
+            i = i++;
+            System.out.println("sonsuz döngü");
+        }
+    }
+}
+
+
+3-Logic error
+Kodun yazımı doğru olup istenilen sonucun alınamaması
+Örnek
+public class toplama {
+    public static void main(String[] args) {
+	int sayı1,sayı2;
+	sayı1=5;
+	sayı2=3;
+	int toplam = sayı1-sayı2;
+	System.out.println("2 sayının toplamı =" + toplam);
+        }
+    }
+}
+4-Name Error
+Tanımlanmayan herhangi bir şey kullanmak
+Örnek
+public class toplama {
+    public static void main(String[] args) {
+	int sayı1,sayı2;
+	sayı1=1;
+	sayı2=10;
+	int toplam = sayı1-sayı2;
+	System.out.println("2 sayının toplamı =" + bölme);
+        }
+    }
+}
+5-Type Error
+Birbiriyle uyuşmayan tiplerle işlem yapılınca oluşan hata
+public class toplama {
+    public static void main(String[] args) {
+	int sayı1 = 10
+	String sayı2 = "5"
+	int toplam = sayı1-sayı2;
+	System.out.println("2 sayının toplamı =" + toplam);
+        }
+    }
+}
+6-İndex error
+Olmayan bir indexe erişmeye çalışmaya denir
+Örnek
+int main() {
+    int arr[3] = {1, 2, 3};
+    int a = arr[3];
+7-Attribute Error
+Olmayan bir özellik kullanmak
+Örnek
+my_list = [1, 2, 3]
+print(my_list.length)

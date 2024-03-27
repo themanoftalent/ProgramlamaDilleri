@@ -7,4 +7,5 @@ public class Toplama {
         int toplam = a + b;
         System.out.println("Toplam: " + toplam);
     }
+    
 }
