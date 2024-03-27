@@ -1,0 +1,47 @@
+                                                                 7 ERROR 
+
+ 1) SYNTAX ERROR : Yazılımcı tarafından kodlama yapılırken sözdiziminde (Syntax) yapılan bir hata sonucu meydana gelen programsal hatalardır. 
+
+Örnek: printf(“alinin boyu uzun)  
+
+ 
+
+2) RUNTİME ERROR : çalışma zamanı hatası, anlamına gelir, bir programın düzgün çalışmasını engelleyen bir yazılım veya donanım sorunudur. 
+
+Örnek: a =7
+b=0
+
+bolme=a/b
+printf(bolme)
+
+3) LOGIC ERROR : Programlama mantığında bir takım şeylerin yanlış düşünülmesinden kaynaklanır. 
+
+Örnek : bir hesap makinesi programında kullanıcının girdiği iki sayıyı toplama yerine çıkarma işlemi yapılması gibi bir mantıksal hata düşünülebilir
+
+ 
+
+4) COMPİLATİON ERROR : Derleme sırasında yapılan hatadır 
+
+ÖRNEK: 
+#include <iostream>
+int main() {
+   cout << "Merhaba" << endl;
+    return 0     // (;) konulmadıgı için hata
+ 
+
+5) ARAYUZ HATASI : Grafiksel sorunlar sonucu ortaya çıkar 
+
+6) FONKSIYONEL HATALAR : yazılım uygulamasının belirli bir işlevselliğini yerine getirememesi veya kullanıcı beklentilerine uygun bir şekilde çalışamaması durumunu ifade eder 
+
+7) SEMANTIC ERROR : Anlamsal hatalara denir 
+ÖRNEK: 
+public class sematic {
+
+    public static void main(String[] args) {
+        int x = 5;
+        int y = "sayi1";  // Bu satırda semantik hata
+        int z = x + y;
+
+        System.out.println("Toplama sonucu: " + z);
+    }
+}

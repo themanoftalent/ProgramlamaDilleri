@@ -1,0 +1,27 @@
+1- Syntax Error: Söz dizilimi hatasıdır. ; yerine : konulması örnek verilebilir
+public class Main {
+    public static void main(String[] args) {
+        int sayi1 = 5:
+        int sayi2 = 7:
+        System.out.println("Toplam: " + (sayi1 + sayi2);
+    }
+}
+2 - Logic  Error: Mantık hatasıdır. 
+        int sayi1 = 10;
+        int sayi2 = 5;
+        int sum = sayi1 * sayi2;
+
+ 3 - Runtime Error: Çalışma zamanı hatasıdır.
+      int sayi1 = 5;
+      int sayi2 = 0;
+      int result = sayi1 / sayi2;
+
+ 4 - Name Error: İsim hatasıdır.
+
+    int sayi1 = 10;
+    int sayi2 = sayi1 + sayi3;
+
+ 5 - Type Error : Veri türleri arasındaki uyuşmazlık hatasıdır.
+ 6- Index Error : Bir dizide olmayan indeksi kullanmaya çalışma hatasıdır.
+ 
+     

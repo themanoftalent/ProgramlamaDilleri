@@ -1,7 +1,9 @@
-public class selamlasma {
+public class Selamlasma{
     public static void main(String[] args) {
-        String msg = "Selam Ali";
-        String msg1 = "Selam Ahmet";
-        System.out.printf(msg+msg1);
+        String mesaj1,mesaj2;
+        mesaj1 = "Merhaba Nasılsın?";
+        mesaj2 = "İyiyim sen nasılsın";
+        System.out.println("+"+mesaj1);
+        System.out.println("-" + mesaj2 );
     }
 }
