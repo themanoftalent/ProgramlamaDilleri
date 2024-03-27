@@ -1,0 +1,116 @@
+import java.util.Scanner;
+
+public class howmuchulove {
+    public static void main(String[] args) {
+        int userlove, counter;
+        counter = 0;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Eşinizi ne kadar seviyorsunuz? Lütfen sayıyla giriş yapın.");
+        userlove = sc.nextInt();
+        do{
+            System.out.println("Seni seviyorum.");
+            counter++;
+        }while(counter<=userlove);
+    }
+}
+
+
+--------------------------------------------------------------------------------------------------
+
+
+import java.util.Scanner;
+
+public class onetouserdemand {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Lütfen bir sayı girin: ");
+        int sayi = sc.nextInt();
+        
+        int i = 1;
+        do {
+            System.out.println(i);
+            i++;
+        } while (i <= sayi);
+        
+    }
+}
+
+
+-------------------------------------------------------------------------------------------------
+
+public class birdenyuzetoplamislemi {
+    public static void main(String[] args) {
+        int toplam = 0;
+        int sayi = 1;
+        
+        do {
+            toplam += sayi;
+            sayi++;
+        } while (sayi <= 100);
+        
+        System.out.println("1'den 100'e kadar olan sayıların toplamı: " + toplam);
+    }
+}
+
+
+
+-------------------------------------------------------------------------------------------------
+
+
+import java.util.Scanner;
+
+public class bankasifresi {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int dogruSifre = 5531; 
+
+        System.out.println("Banka şifresini tahmin etmeye çalış!");
+
+        int tahmin;
+        do {
+            System.out.println("Şifreyi tahmin edin: ");
+            tahmin = sc.nextInt();
+
+            if (tahmin != dogruSifre) {
+                System.out.println("Yanlış şifre. Tekrar deneyin.");
+            }
+        } while (tahmin != dogruSifre);
+
+        System.out.println("Tebrikler! Doğru şifreyi buldunuz.");
+    }
+}
+
+
+
+-------------------------------------------------------------------------------------------------
+
+import java.util.Scanner;
+
+public class ciftsayilar {
+    public static void main(String[] args) {
+        int baslangic, bitis;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Başlangıç sayısını girin:");
+        baslangic = sc.nextInt();
+        System.out.println("Bitis sayisini girin:");
+        bitis = sc.nextInt();
+        do {
+            if (baslangic % 2 == 0) {
+                System.out.println(baslangic);
+            }
+            baslangic++;
+        } while (baslangic <= bitis);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
