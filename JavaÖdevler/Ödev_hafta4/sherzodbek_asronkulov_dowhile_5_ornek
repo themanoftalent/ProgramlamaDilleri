@@ -1,0 +1,56 @@
+import java.util.Scanner;
+
+/**
+ * do_wile_5_ornek
+ */
+public class do_wile_5_ornek {
+
+    public static void main(String[] args) {
+        /*1.Kullanıcıdan bir sayı alıp, negatif olana kadar tekrarlama */
+int sayi;
+do {
+  System.out.println("Bir sayı giriniz (negatif sayı girmek için 0): ");
+  sayi = Integer.parseInt(System.console().readLine());
+  System.out.println("Girilen sayi: " + sayi);
+} while (sayi > 0)
+    }
+
+
+    /*2.Bir dizinin elemanlarını yazdırma */
+    int[] dizi = {1, 2, 3, 4, 5};
+    int i = 0;
+    do {
+    System.out.println(dizi[i]);
+    i++;
+    } while (i < dizi.length);
+
+    /*3. 1 den 10 e kadar çıf sayılar listele */
+    int sayi = 1;
+    do {
+    if (sayi % 2 == 0) {
+        System.out.println(sayi);
+    }
+    sayi++;
+    } while (sayi <= 10);
+
+    /*4.Sayinin faktoryalı */
+    int sayi = 5;
+    int faktoriyel = 1;
+    do {
+    faktoriyel *= sayi;
+    sayi--;
+    } while (sayi > 1);
+    System.out.println("Faktöriyel: " + faktoriyel);
+
+    /*5. Kullanıc girdi sayıya kadar merhaba yazan kod */
+     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Kaç kere 'Merhaba' yazdırmak istiyorsunuz? ");
+        int sayi = scanner.nextInt();
+        int i = 1;
+        do {
+            System.out.println("Merhaba!");
+            i++;
+        } while (i <= sayi);
+        System.out.println("Yazdırma işlemi tamamlandı!");
+    }
