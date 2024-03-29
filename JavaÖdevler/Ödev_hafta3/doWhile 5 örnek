@@ -1,0 +1,90 @@
+1) 
+public class Main {
+    public static void main(String[] args) {
+        // 10 a kadar olan çift sayıların toplamı
+
+        int toplam=0;
+        int i=0;
+
+        do{
+            if(i%2==0)  {
+                toplam=toplam+i;
+            }
+i++;
+        }
+while(i<=10);
+        System.out.println("10 a kadar çift sayıların toplamı: "+toplam);
+    }
+}
+-----------------------------------------------------
+2)import java.util.Scanner;
+
+
+public class Main {
+    public static void main(String[] args) {
+
+        // Şifre doğrulatma
+
+        Scanner scanner = new Scanner(System.in);
+         String sifre;
+
+         do{
+             System.out.println("sifrenizi giriniz :");
+             sifre= scanner.next();
+         }
+         while(!sifre.equals("gizli"))
+
+        System.out.println("sifre başarılı");
+    }
+}
+------------------------------------------------------------
+3) import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+// iş için cevap alımı
+        Scanner scanner = new Scanner(System.in);
+        String isalım;
+
+        do {
+            System.out.println("web sayfası tasarlamayı biliyor musunuz ?(evet/hayır)");
+            isalım = scanner.nextLine();
+        } while (isalım.equals("evet"));
+
+        System.out.println("işe alındınız.");
+    }
+}
+-------------------------------------------------------------
+4)public class Main {
+
+    //1 den 20 ye kadar çift sayıları yazdırma
+    
+    public static void main(String[] args) {
+        int sayi = 1;
+
+        do {
+            if (sayi % 2 == 0) {
+                System.out.println(sayi);
+            }
+            sayi++;
+        } while (sayi <= 20);
+    }
+}
+-----------------------------------------------
+5) 
+    public class Main {
+
+    public static void main(String[] args) {
+
+        // 1 den 100 e kadar 6 nın katları
+        int sayi = 1;
+
+        do {
+            if (sayi % 6 == 0) {
+                System.out.println(sayi);
+            }
+            sayi++;
+        } while (sayi <= 100);
+    }
+}
