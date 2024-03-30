@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+      
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("İsminiz nedir? ");
+        String isim = scanner.nextLine();
+        
+        System.out.println("Merhaba, " + isim + "! Hoş geldiniz.");
+        System.out.println("Nasılsınız " + isim + "?");
+        
+        scanner.close();
+    }
+}
+
+//İbrahim Öz 2111502026
