@@ -1,3 +1,4 @@
+
 public class Multi_D_Array_example {
     public static void main(String[] args) {
         // Declare and initialize a 3x3 matrix
@@ -13,6 +14,15 @@ public class Multi_D_Array_example {
                 System.out.print(matrix[i][j] + " ");
             }
             System.out.println();
+
+public class WhileLoop {
+
+    public static void main(String[] args) {
+        int count=1000;
+        while(count>0){
+            System.out.println(count);
+            count--;
+
         }
     }
 }
