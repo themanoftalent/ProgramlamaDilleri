@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class DoWhileİleDöngü {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+         int flag=0;
+      if(flag==0) {
+    	  do
+          {
+              if(flag==0) {
+            	  System.out.println("Lütfen bir sayı girin: ");
+                  sayi = scanner.nextInt();
+              }
+              else {
+            	  System.out.println("Islem tamamnlandı.");
+            	  break;
+              }
+
+             if(flag==0) {
+            	 for ( i = 0; i < 10; i++) {
+                     if (sayi == i) {
+                         System.out.println("Sayı bulundu.");
+                         flag++;
+            
+                         break;
+                     }
+                     else {
+                         System.out.println("Sayı bulunamadı.");
+                         break;
+                     }
+                     
+                 }
+             }
+          } while (i< 10);
+      }
+    }
+}
