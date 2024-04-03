@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class Multi_D_Array_example {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Dizi boyutunu giriniz (x y z): ");
+        int x=scanner.nextInt();
+        int y=scanner.nextInt();
+        int z=scanner.nextInt();
+
+        int[][][]matrix= new int[x][y][z];
+        for (int i = 0; i < x; i++) {
+            for (int j = 0; j < y; j++) {
+                for (int k = 0; k < z; k++) {
+                    matrix[i][j][k] = i + j + k;
+                }}}
+        for (int i = 0; i < x; i++) {
+            for (int j = 0; j < y; j++) {
+                for (int k = 0; k < z; k++) {
+                    System.out.println("matrix[" + i + "][" + j + "][" + k + "]" + matrix[i][j][k]);
+                }}}
+    }
+
+
+}
