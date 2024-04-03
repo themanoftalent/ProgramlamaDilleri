@@ -1,0 +1,25 @@
+public class StaticExample  {
+    static int number= 10;
+    static void staticmetot() { //
+        System.out.println("Bu bir static metoddur.");
+    }
+    void nonstaticMethod(){
+        System.out.println("Bu bir static olmayan metoddur.");
+    }
+    public static void main(String args[]) {
+
+        System.out.println("Static değişkenin değeri:"+number);
+
+        staticmetot();
+        
+        StaticExample nesne = new StaticExample();
+
+        int nonstaticVar = 20;
+        System.out.println("Non-static değişkenin değeri:"+nonstaticVar);
+
+        nesne.nonstaticMethod();
+    }
+
+
+}
+// Serdar Kemal İncaman 2211502009
