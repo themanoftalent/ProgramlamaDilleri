@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main (String[] args) {
+        
+System.out.println("Adin1z1 giriniz: ");
+
+Scanner sc = new Scanner (System. in);
+
+String ad = sc. nextLine();
+
+System.out println ("Cinsivetinizi gininiz: ");
+
+String cinsivet = sc.nextLine();
+
+System.out.println ("Yasinizi gininiz:");
+
+int yas = sc.nextInt);
+
+char ilkHarf = ad. charAt(0);
+
+if (yas>16 && yas<18) {
+    if (cinsiyet. equalsIgnoreCase ( anotherString: "Enkek") && ilkHarf == 'B') {
+        System.out.println("Evde otur");  ｝ 
+else
+System.out println ("Hata!");  J
+
+elsel
+System.out.println("Hata!");
+
+}}}
+
+//İbrahim Öz 2111502026
