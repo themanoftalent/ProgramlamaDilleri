@@ -1,0 +1,92 @@
+//Kullanıcıdan Girilen Sayının Faktöriyelini Bulma:
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Faktöriyelini bulmak istediğiniz sayıyı girin: ");
+        int sayi = scanner.nextInt();
+        
+        int faktoriyel = 1;
+        int i = 1;
+        do {
+            faktoriyel *= i;
+            i++;
+        } while (i <= sayi);
+        
+        System.out.println(sayi + " sayısının faktöriyeli: " + faktoriyel);
+        scanner.close();
+    }
+}
+
+
+//1'den 10'a Kadar Olan Sayıların Toplamını Bulma:
+
+public class Main {
+    public static void main(String[] args) {
+        int toplam = 0;
+        int i = 1;
+        do {
+            toplam += i;
+            i++;
+        } while (i <= 10);
+        
+        System.out.println("1'den 10'a kadar olan sayıların toplamı: " + toplam);
+    }
+}
+
+
+//10'dan Geriye Doğru Sayma:
+
+public class Main {
+    public static void main(String[] args) {
+        int sayi = 10;
+        do {
+            System.out.println(sayi);
+            sayi--;
+        } while (sayi > 0);
+    }
+}
+
+
+//Kullanıcıdan Sıfır Girilene Kadar Sayıları Toplama:
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int toplam = 0;
+        int sayi;
+        do {
+            System.out.print("Bir sayı girin (çıkmak için 0): ");
+            sayi = scanner.nextInt();
+            toplam += sayi;
+        } while (sayi != 0);
+        
+        System.out.println("Girdiğiniz sayıların toplamı: " + toplam);
+        scanner.close();
+    }
+}
+
+
+//Kullanıcıdan Alınan Sayının Pozitif Olup Olmadığını Kontrol Etme:
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int sayi;
+        do {
+            System.out.print("Pozitif bir sayı girin: ");
+            sayi = scanner.nextInt();
+        } while (sayi <= 0);
+        
+        System.out.println(sayi + " pozitif bir sayıdır.");
+        scanner.close();
+    }
+}
+
+//İbrahim Öz 2111502026 

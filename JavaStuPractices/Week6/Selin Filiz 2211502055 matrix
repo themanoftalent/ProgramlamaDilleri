@@ -1,0 +1,17 @@
+package multi_D_Array_example;
+
+public class Multi_D_Array_example {
+
+	public static void main(String[] args) {
+		int [][] matrix= {{10,20,30},{40,50,60},{70,80,90}};
+		int i,j;
+		for( i=0;i<matrix.length;i++) {
+			for( j=0;j<matrix[i].length;j++) {
+				System.out.print(matrix[i][j]+ " ");
+			}
+			System.out.println(" ");//bu boşluk sayesinde  matrix 3'lü yapım oluşuyor.
+		}
+		
+
+}
+}

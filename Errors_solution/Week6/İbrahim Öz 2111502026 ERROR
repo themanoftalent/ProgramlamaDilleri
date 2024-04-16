@@ -1,0 +1,52 @@
+	  // Syntax Hatası (Syntax Error): Kodun yazım kurallarına uymaması durumunda ortaya çıkar.
+       
+      public class Main {
+    public static void main(String[] args) {
+        int x = 5
+        System.out.println(x);
+    }
+}
+
+
+	  //Yanlış Veri Tipi Hatası (Type Error): Bir değişkenin beklenen veri tipine uygun olmaması durumunda ortaya çıkar.
+	  
+	  public class Main {
+    public static void main(String[] args) {
+        int x = "Hello";
+        System.out.println(x);
+    }
+}
+
+
+	  //Bölme Hatası (Division Error): Bir sayının sıfıra bölünmesi durumunda ortaya çıkar.
+
+	  public class Main {
+    public static void main(String[] args) {
+        int x = 5;
+        int y = 0;
+        int z = x / y;
+        System.out.println(z);
+    }
+}
+
+
+	  //Tanımsız Değişken Hatası (Undefined Variable Error): Bir değişkenin tanımlanmamış olması durumunda ortaya çıkar.
+	  
+	  public class Main {
+    public static void main(String[] args) {
+        int x;
+        System.out.println(x);
+    }
+}
+
+
+	  //Null Referans Hatası (Null Pointer Exception): Bir nesnenin referansının null olması durumunda ortaya çıkar.
+	  
+	  public class Main {
+    public static void main(String[] args) {
+        String str = null;
+        System.out.println(str.length());
+    }
+}
+
+//İbrahim Öz 2111502026

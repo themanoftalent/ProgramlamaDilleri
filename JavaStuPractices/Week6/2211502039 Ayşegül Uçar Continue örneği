@@ -1,0 +1,15 @@
+//2211502039 Ayşegül Uçar Continue örneği
+public class ContinueExample {
+    public static void main(String[] args) {
+        // 1'den 10'a kadar olan sayıları ekrana yazdıralım,
+        // ancak sayı 5 olduğunda yazdırmayı atlayalım
+
+        for (int i = 1; i <= 10; i++) {
+            // Eğer i değeri 5 ise, o adımı atlayalım ve bir sonraki adıma geçelim
+            if (i == 5) {
+                continue;
+            }
+            System.out.println(i);
+        }
+    }
+}
