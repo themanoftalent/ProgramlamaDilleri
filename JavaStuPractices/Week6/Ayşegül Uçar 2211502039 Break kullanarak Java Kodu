@@ -1,0 +1,13 @@
+//Ayşegül Uçar 2211502039
+public class BreakKodu {
+    public static void main(String[] args) {
+        //1'den 10'a kadar olan sayıları ekrana yazdıralım
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(i);
+            // Eğer i değeri 5 ise döngüyü sonlandırsın
+            if (i == 5) {
+                break;
+            }
+        }
+    }
+}

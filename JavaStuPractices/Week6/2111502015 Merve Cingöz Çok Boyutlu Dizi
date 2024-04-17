@@ -1,0 +1,20 @@
+public class CokBoyutluDizi {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+ int[][] dizi= new int[3][4];
+ for (int i=0;i<dizi.length;i++) {
+	 for (int j= 0;j<dizi[i].length ;j++) {
+		 dizi[i][j]=i*4+j+1;
+	 }
+ }
+		 
+	 
+ for(int i=0;i<dizi.length;i++){
+		 for(int j=0;j<dizi[i].length;j++) {
+			 System.out.println(dizi[i][j]+ " ");
+		 } 
+		 System.out.println();
+	 }
+ }
+	}

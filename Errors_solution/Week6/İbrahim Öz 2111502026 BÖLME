@@ -1,0 +1,15 @@
+public class bolme {
+	
+	    public static void main(String[] args) {
+	        int num1 = 18;
+	        double num2 = 4.5;
+
+	        double result = num1 / num2;
+	        
+	        System.out.println(result);
+	        
+	   
+	}
+}
+
+//İbrahim Öz 2111502026
