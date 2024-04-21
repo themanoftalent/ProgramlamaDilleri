@@ -1,0 +1,10 @@
+public class overload {
+    public static int add(int a, int b) {
+        return a + b;
+    }
+
+    public static void main(String[] args) {
+        int intResult = add(5,4);
+        double doubleResult = add((int) 5.3,(int) 4.89);
+        System.out.println("\n İnteger result =" + intResult);
+        System.out.println("Double result =" + doubleResult);
