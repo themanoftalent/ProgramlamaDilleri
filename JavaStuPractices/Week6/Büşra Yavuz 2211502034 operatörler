@@ -1,0 +1,38 @@
+public class deneme
+{
+    public static void main(String[] args) {
+    
+    int x=10, y=5, z, w;
+    z=x+y;
+    w=x*y;
+ 
+    String str1="hello";
+    String str2=" world";
+    String result=str1+str2;
+    double a=5.5;
+    int b = (int)a;
+    
+
+    boolean isEqual= x==z;
+    boolean isGreater= x>y;
+    boolean result2 =isGreater&&isEqual;
+
+    int number =18;
+    number+=6;
+    number-=3;
+    printAll(x, y, z, w, result, a, b, number, result2, isEqual, isGreater);
+}
+    
+    public static void printAll(int x,int y,int z, int w,String result,double a,int b,int number,boolean result2,
+    boolean isEqual,boolean isGreater){
+   
+    System.out.println("z="+z);
+    System.out.println("w="+w);
+    System.out.println("result="+ result);
+    System.out.println("b=" +b);
+    System.out.println("result2=" +result2);
+    System.out.println("number="+number);
+
+
+}
+    }
