@@ -1,0 +1,38 @@
+public class Sayitoplam {
+    public static void main(String[] args) {
+    
+    int sayi1=10;
+    int sayi2=25;
+    int toplam=sayi1+sayi2;
+    System.out.println("Iki sayinin toplami = "+toplam);
+    }
+}
+
+
+
+
+
+
+
+public class Sayibolme {
+    public static void main(String[] args) {
+    
+    double sayi1=175;
+    int sayi2=5;
+    double bolum =sayi1/sayi2;
+    System.out.println("Iki sayinin bolumu = "+bolum);
+    }
+}
+
+
+
+
+public class selamlasma{
+  public static void main(String [] args){
+    String msg1="Merhaba Uzay";
+    String msg2="Selam Levo";
+    System.out.println(msg1);
+    System.out.println(msg2);
+  }
+}
+

@@ -1,0 +1,146 @@
+/Tahmin Oyunu
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class UzayTahminOyunu {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        Random random = new Random();
+
+        int tahminEdilecekSayi = random.nextInt(100) + 1; 
+        int tahmin;
+        int denemeSayisi = 0;
+        boolean dogruTahmin = false;
+
+        System.out.println("1 ile 100 arasında bir sayıyı tahmin edin.");
+
+        do {
+            System.out.print("Tahmininizi giriniz: ");
+            tahmin = scanner.nextInt();
+            denemeSayisi++;
+
+            if (tahmin == tahminEdilecekSayi) {
+                dogruTahmin = true;
+                break;
+            } else if (tahmin < tahminEdilecekSayi) {
+                System.out.println("Daha büyük bir sayı girin.");
+            } else {
+                System.out.println("Daha küçük bir sayı girin.");
+            }
+        } while (denemeSayisi<10);
+
+        if (dogruTahmin) {
+            System.out.println("Tebrikler! " + denemeSayisi + " denemede doğru tahmin ettiniz.");
+        } else {
+            System.out.println("Oyunu kaybettiniz, doğru sayı: " + tahminEdilecekSayi);
+        }
+    }
+}
+
+
+
+Girilen Toplam
+
+import java.util.Scanner;
+
+public class Uzay2GirilenToplam{
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int toplam = 0;
+        int sayi;
+
+        do {
+            System.out.print("Bir sayı girin (Çıkmak için 0'a basın): ");
+            sayi = scanner.nextInt();
+            toplam += sayi;
+        } while (sayi != 0);
+
+        System.out.println("Girdiğiniz sayıların toplamı: " + toplam);
+    }
+}
+
+
+Sayı Yazdırma
+
+public class Uzay3SayiYazdırma {
+    public static void main(String[] args) {
+        int sayi = 1;      
+
+        do {
+            System.out.print(sayi + " ");
+            sayi++;
+            if(sayi%10 == 0){
+                System.out.println("\n");
+            }
+        } while (sayi <= 20);       
+    }
+}
+
+
+
+Faktöryel
+
+import java.util.Scanner;
+
+public class Uzay4Faktöriyel {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int Girilensayi;
+        long faktoriyel = 1;
+
+        do {
+            System.out.print("Faktöriyel için pozitif bir sayı girin: ");
+            Girilensayi = scanner.nextInt();
+        } while (Girilensayi < 0);
+
+        int sayac = 1;
+
+        do {
+            faktoriyel *= sayac;
+            sayac++;
+        }while(sayac <= Girilensayi);
+
+
+        System.out.println(Girilensayi + "! = " + faktoriyel);
+    }
+}
+
+
+Hesap Giriş
+
+import java.util.Scanner;
+
+public class Uzay5_HesapGiris {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        String isim;
+        String sifre;
+
+        System.out.println("Hesap oluşturma! \n");
+        System.out.print("İsminizi giriniz: ");
+        isim = scanner.nextLine();
+        System.out.print("Şifrenizi oluşturunuz: ");
+        sifre = scanner.nextLine();
+
+        String girilenIsim;
+        String girilenSifre;
+        do {
+            System.out.print("Kullanıcı adı: ");
+            girilenIsim = scanner.nextLine();
+            System.out.print("Şifre: ");
+            girilenSifre = scanner.nextLine();
+
+            if (!girilenIsim.equals(isim) || !girilenSifre.equals(sifre)) {
+                System.out.println("Kullanıcı adı veya şifre hatalı. Tekrar deneyin.");
+            }
+        } while (!girilenIsim.equals(isim) || !girilenSifre.equals(sifre));
+
+        System.out.println("Giriş başarılı! Hoş geldiniz, " + girilenIsim + "!");
+
+
+    }
+}
+

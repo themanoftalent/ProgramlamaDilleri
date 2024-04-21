@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class multiDarray {
+    public static void main(String[] args) {
+        Scanner scanner= new Scanner(System.in);
+        System.out.println("Dizi boyutunu giriniz (x y z)");
+        int xsize= scanner.nextInt();
+        int ysize= scanner.nextInt ();
+        int zsize= scanner.nextInt();
+        int [][][] multiDarray;
+        multiDarray = new int[xsize][ysize][zsize] ;
+        for (int x=0; x<xsize;x++){
+            for(int y=0; y<ysize;y++){
+                for(int z=0; z<zsize;z++){
+                    multiDarray[x][y][z] = x + y + z;
+
+                }
+            }
+        }
+        for (int x = 0; x < xsize; x++) {
+            for (int y = 0; y < ysize; y++) {
+                for (int z = 0; z < zsize; z++) {
+                    System.out.println("multiDarray[" + x + "][" + y + "][" + z + "] = " + multiDarray[x][y][z]);
+                }
+            }
+        }
+
+
+    }
+}

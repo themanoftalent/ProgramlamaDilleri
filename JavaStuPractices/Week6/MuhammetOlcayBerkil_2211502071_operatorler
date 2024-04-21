@@ -1,0 +1,53 @@
+public class Operatorlerdersyedi {
+    //fonksiyon yazdirma
+    public static void printAll(int x,int y,int z,int w,String result,boolean isEqual,boolean isGreater,boolean result2,int number){
+
+        System.out.println("y: " + y);
+        System.out.println("z: " + z);
+        System.out.println("w: " + w);
+        System.out.println(result);
+        System.out.println(isEqual);
+        System.out.println(isGreater);
+        System.out.println(result2);
+        System.out.println(number);
+    }
+    public static void main(String[] args) {
+        //aritmetik ifadeler
+        int x,y,z,w;
+        x=15;
+        y=5;
+        z=x+y;
+        w=x*y;
+        //System.out.println("x:" + x);
+        //System.out.println("y:" + y);
+        //System.out.println("z:" + z);
+        //System.out.println("w:" + w);
+        //overloaded operators (aşırı yüklrnmiş operatorler)
+
+        String str1="Hello ";
+        String str2="world";
+        String result=str1+str2; //stringleri birlestirme
+
+        //System.out.println(result);
+        //Type Conversion Tür Dönüstürme
+        double a=5.5;
+        int b=(int) a; // double int yaptım
+       // System.out.println(b);
+
+        //Relational boolean statements ilişkisel ve boolean ifadeler
+        boolean isEqual=x==y; // x ve y nin eşit olup olmadığınını kontrol et
+        boolean isGreater=x>y; // x ve y den büyük olup olmadığınını kontrol et
+        boolean result2=isGreater && isEqual;
+       // System.out.println(result2);
+
+
+        // atama ifadeleri
+        int number = 18;
+        number+=6;
+        number-=3;
+        //System.out.println(number);
+        printAll(x,y,z,w,result,isEqual,isGreater,result2,number);
+
+
+    }
+}
