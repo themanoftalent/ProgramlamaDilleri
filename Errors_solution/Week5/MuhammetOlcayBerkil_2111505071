@@ -1,0 +1,29 @@
+public class Staticveriable{
+
+        static int number= 10; //Bu değişken sınıfa ait nesneye ait değil.
+
+static void staticmethod() { //
+System.out.println("Bu statik bir metot");
+
+
+public static void main(String args[]) {
+
+System.out.println("Number: " + number);
+
+staticmethod();;
+
+// Obje oluşturulur
+StaticExample nesne = new StaticExample();
+
+// non static değişken tanımla
+int nonstaticVar = 20;
+
+// Doğru çağrı
+nesne.nonstaticVar();
+
+}
+
+static void nonstaticVar() {
+System.out.println("Bu non-static bir metot");
+}
+}}

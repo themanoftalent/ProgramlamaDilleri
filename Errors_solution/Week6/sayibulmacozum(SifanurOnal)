@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class hatacozum1 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Lutfen bir sayi girin: ");
+        int sayi = scanner.nextInt();
+        int i;
+        for ( i = 0; i <= 10; i++) {
+            System.out.println(i);
+            if (sayi == i) {
+                System.out.println("Sayi bulundu.");
+                break;
+            }
+            else {
+               System.out.println("Sayi bulunamadi.");
+            }
+        } 
+
+      
+
+        scanner.close();
+    } 
+}
+
+//do-while dongusu for dongusuyle ayni islevi gordugu icin silinmelidir.

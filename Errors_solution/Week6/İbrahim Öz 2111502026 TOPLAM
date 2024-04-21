@@ -1,0 +1,12 @@
+public class Main {
+    public static void main(String[] args) {
+        int sayi1 = 7;
+        int sayi2 = 10;
+        
+        int toplam = sayi1 + sayi2;
+        
+        System.out.println("Toplam: " + toplam);
+    }
+}
+
+//İbrahim Öz 2111502026

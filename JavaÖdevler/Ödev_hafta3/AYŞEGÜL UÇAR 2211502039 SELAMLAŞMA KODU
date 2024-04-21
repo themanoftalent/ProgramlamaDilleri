@@ -1,0 +1,8 @@
+package programlamadıllerı1;
+public class mesaj {
+public static void main(String[] args) {
+String msg="selam ";
+String msg2="merhaba";
+System.out.println (msg+msg2);
+}
+}
