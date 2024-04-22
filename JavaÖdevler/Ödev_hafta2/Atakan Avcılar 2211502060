@@ -1,0 +1,26 @@
+1-) Syntax Error:  Kullanılan programlama diline aykırı bir şekilde kodun yazılması veya eksik yazılması durumunda rastladığımız hata türüdür.
+ÖRNEK:
+printf("Hello World").
+burada C dilindeki syntax'da ; yerine . kullanılarak bir syntax hatası alınmasına sebep olmuştur.
+2-) Logic Error:Mantıksal hatalar (logic errors), programın beklenmeyen veya yanlış sonuçlar üretmesine neden olan hatalardır.
+Bu tür hatalar, genellikle programlama dilinin sözdizimine veya yapısal kurallarına uymayan bir durumdan ziyade, kodun doğru bir şekilde çalışmasını engelleyen yanlış bir mantık veya algoritma kullanımından kaynaklanır.
+ÖRNEK: Hesap makinesinde çarpmaya bastığımızda bölmesi gibi bi durum söz konusu olabilir çalışssa da sonuc yanlıştır.
+3-) Runtime Error:Runtime error (çalışma zamanı hatası), bir program çalıştırıldığında ortaya çıkan ve programın normal akışını kesen bir hatadır.
+Bu tür hatalar, programlama dilinin sözdizimine veya dilin yapısal kurallarına uymayan bir durum gerçekleştiğinde veya beklenmeyen bir durumla karşılaşıldığında oluşabilir.
+ÖRNEK: 
+ int sayi1=0;
+int sayi2=0;
+int bolum=0;
+bolum=sayi1/sayi2;
+print(bolum);
+4-)Compilation Error:Derleme hatası (compilation error), bir programın kaynak kodunun derlenmesi sırasında oluşan bir hatadır.
+Bu hata, genellikle programın sentaks veya yapısal kurallarına uymadığı zaman ortaya çıkar ve program derlenemez.
+Örnek: 
+int x=5 
+burada ";" konulmadıgı için derleme burada hata verir
+5-)Arayüz Hataları:Arayüz hataları (interface errors), genellikle kullanıcı arayüzü (UI) tasarımıyla ilgili hataları ifade eder.
+Bu hatalar, kullanıcı deneyimini olumsuz etkileyebilir veya bir uygulamanın kullanılabilirliğini azaltabilir.
+6-)Semantik Hatalar: programın derleme veya çalışma zamanında hata vermemesine rağmen, beklenmeyen veya yanlış sonuçlar üreten hatalardır.
+Bu hatalar, genellikle kodun mantıksal yapısında veya anlamında bir yanlışlık olduğunda ortaya çıkar.
+7-)Fonksiyonel Hatalar:Bu hatalar, genellikle işlevin beklenen sonuçları üretmemesi veya kullanıcı beklentilerine uygun olmaması durumunda ortaya çıkar.
+Fonksiyonel hatalar, yazılımın doğrudan işlevselliğini etkiler ve kullanıcı deneyimini olumsuz yönde etkileyebilir.
