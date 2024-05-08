@@ -1,0 +1,15 @@
+public class sub_main {
+    public static void main(String[] args) {
+        subprograms.selamla();                                                  main dosya
+        
+    }
+}
+
+
+
+
+public class subprograms {
+    public static void selamla() {                                               subprograms dosyası
+        System.out.println("selam");
+    }
+}
