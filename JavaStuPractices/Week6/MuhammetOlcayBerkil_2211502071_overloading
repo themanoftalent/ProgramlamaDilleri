@@ -1,0 +1,18 @@
+public class dersoverloadingornek {
+    public static int topla(int a,int b){
+        return a+b;
+    }
+    public static double topla(double a,double b){
+        return a+b;
+    }
+    public static void main(String[] args) {
+        int result = topla(5,4);
+        System.out.println("İnteger result :"+result);
+        System.out.println("\n");
+        double result2 = topla(3.51,6.7);
+        System.out.println("double result :"+result2);
+
+
+
+    }
+}
