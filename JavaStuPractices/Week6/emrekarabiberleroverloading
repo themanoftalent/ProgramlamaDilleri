@@ -1,0 +1,17 @@
+public class Main {
+    public static int add(int a, int b){
+        return a+b;
+    }
+    public static double add(double a,double b){
+        return a+b;
+    }
+    public static void main(String[] args){
+        int result = add(7,2);
+        System.out.println("result:"+result);
+        System.out.println("\n");
+        double result2 = add(2.57,4.69);
+        System.out.println("result2:"+result2);
+        
+        
+    }
+}
