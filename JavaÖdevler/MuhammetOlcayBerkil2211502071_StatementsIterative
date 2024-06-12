@@ -1,0 +1,23 @@
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class StatementsIterative {
+    public static void main(String[] args) {
+        Scanner input=new Scanner(System.in);
+        System.out.println("Bir String Giriniz:");
+        char chr=input.next().charAt(0);
+        if (!chr.isLetter(chr)){
+            throw new IllegalArgumentException("Lutfen sadece harf dizini giriniz");
+            
+        }
+        if (chr=='a' || chr=='A'){
+            System.out.println("Kelimenin ilk harfi A/a");
+        }
+        else {
+            System.out.println("Kelimenin ilk harfi A/a degil");
+        }
+        catch(InputMismatchException e){
+            System.out.println(e.getMessage());
+        }
+    }
+}
