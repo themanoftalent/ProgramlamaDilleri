@@ -1,0 +1,40 @@
+package java;
+public class subprograms {
+    public static void selamla() {
+        System.out.println("selam");
+        
+    }
+    
+    public static double topla(double a,double b) {
+        
+        return a+b;
+    }
+    public static double carpma(double a,double b) {                                                subprograms dosyası
+        
+        return a*b;
+    }
+    public static double bolme(double a,double b) {
+        
+        return a/b;
+    }
+   
+    }
+
+
+
+
+
+
+
+
+package java;
+public class sub_main {
+    public static void main(String[] args) {
+        subprograms.selamla();
+       System.out.println(subprograms.topla(1, 5));
+       System.out.println(subprograms.carpma(3, 6));                                           sub_main dosyası
+       System.out.println(subprograms.bolme(12, 2));
+    }
+
+    
+}
