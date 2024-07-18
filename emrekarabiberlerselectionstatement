@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class SelectionStatementString {
+    public static void main(String[] args) {
+        Scanner keyboard = new Scanner(System.in);
+        System.out.println("bir char giriniz:\n");
+       try {
+           Character text = keyboard.next().charAt(0);
+           if (text == 'a' || text == 'A') {
+               System.out.println("ilk karakter A");
+           } else {
+               System.out.println("ilk karakter A değil");
+           }
+       }catch(Exception e){
+           System.out.println("something went wrong");
+       } finally{
+           System.out.println("try catch tamamlandı");
+       }
+
+    }
+}
