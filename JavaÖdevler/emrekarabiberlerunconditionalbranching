@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 public class guardedcommands {
     public static void main(String[] args) {
@@ -28,4 +29,21 @@ public class guardedcommands {
         break;
  }
 }
+
+public class unconditionalbranching{
+public static void main(String[] args) {
+    System.out.println("bu bir koşulsuz dallanma");
+    for(int i = 0; i<5; i++){
+        System.out.println("sayi"+i);
+        for(int j = 0; j<=0;j--){
+           if(j<0){
+            break;
+           }
+       System.out.println("\n sayilar"+j);
+       
+        }
+
+    }
+}
+
 }
