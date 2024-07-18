@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class GuardedCommands {
+    public static void main(String[] args) {
+        Scanner input=new Scanner(System.in);
+        System.out.println("Bir sayi giriniz:");
+        int day=input.nextInt();
+
+        switch (day){
+            case 1:
+                System.out.println("PAZARTESİ");
+                break;
+            case 2:
+                System.out.println("SALİ");
+                break;
+            case 3:
+                System.out.println("CARSAMBA");
+                break;
+            case 4:
+                System.out.println("PERSEMBE");
+                break;
+            case 5:
+                System.out.println("cuma");
+                break;
+            default:
+                System.out.println("Girilen deger yok");
+        }
+    }
+}
