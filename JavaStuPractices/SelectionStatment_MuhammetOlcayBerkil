@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class SelectionStatment {
+    public static void main(String[] args) {
+        int x;
+        Scanner input=new Scanner(System.in);
+        System.out.println("X'i giriniz: ");
+        x=input.nextInt();
+        if(x>0){
+            System.out.println("X Pozitif");
+        } else if (x<0) {
+            System.out.println("X Negatiftir");
+        }
+        else {
+            System.out.println("X sıfırdır");
+        }
+    }
+}
